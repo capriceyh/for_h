@@ -59,7 +59,6 @@ function findIndex() {
     var audioTime = doms.audio.currentTime
     for(var i=0;i < lrcData.length; i++){
         if(audioTime < lrcData[i].time){
-            console.log(i-1)
             return i - 1
         }
     }
